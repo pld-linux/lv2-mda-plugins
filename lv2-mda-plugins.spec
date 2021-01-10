@@ -1,18 +1,18 @@
 Summary:	Port of the MDA VST plugins to LV2
 Summary(pl.UTF-8):	Port wtyczek VST MDA do LV2
 Name:		lv2-mda-plugins
-Version:	1.2.4
+Version:	1.2.6
 Release:	1
 License:	GPL v3+
 Group:		Libraries
 Source0:	http://download.drobilla.net/mda-lv2-%{version}.tar.bz2
-# Source0-md5:	57feb6b58b195f87f8b3e436f3b56076
+# Source0-md5:	78712e8e1d2019c8bda6e164d1cd9115
 URL:		http://drobilla.net/software/mda-lv2/
 BuildRequires:	libstdc++-devel
-BuildRequires:	lv2-devel >= 1.2.0
+BuildRequires:	lv2-devel >= 1.16.0
 BuildRequires:	pkgconfig
-BuildRequires:	python
-Requires:	lv2 >= 1.2.0
+BuildRequires:	python >= 2
+Requires:	lv2 >= 1.16.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_noautoprovfiles	%{_libdir}/lv2
